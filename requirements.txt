@@ -1,0 +1,8 @@
+# requirements.txt
+streamlit
+streamlit-tree-select
+PyYAML
+langchain-openai
+langchain-community
+langchain
+requests

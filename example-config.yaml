@@ -1,0 +1,16 @@
+# create a config.yaml in the root of your project and add the below contents
+
+default_llm_provider: OpenAI
+default_vectorization: false
+
+openai_api_key: "YOUR_OPENAI_API_KEY"
+
+azure_openai_api_key: "YOUR_AZURE_API_KEY"
+azure_openai_endpoint: "YOUR_AZURE_ENDPOINT"
+azure_openai_deployment_name_chat: "YOUR_AZURE_CHAT_DEPLOYMENT_NAME"
+azure_openai_api_version: "2024-02-01"
+azure_openai_deployment_name_embedding: "YOUR_AZURE_EMBEDDING_DEPLOYMENT_NAME"
+
+ollama_base_url: "http://localhost:11434"
+ollama_model_name_chat: "llama2"
+ollama_model_name_embedding: "llama2"
