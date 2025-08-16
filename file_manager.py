@@ -3,7 +3,7 @@ import os
 from streamlit_tree_select import tree_select
 
 # Define ignore lists (simplified display)
-FOLDER_IGNORE = {'.git', 'node_modules', '__pycache__', 'venv', '.vscode', 'dist', 'build', '.idea', '.DS_Store'}
+FOLDER_IGNORE = {'.git', 'node_modules', '__pycache__', 'venv', '.vscode', 'dist', 'build', '.idea', '.DS_Store', '.next'}
 FILE_IGNORE = {'.pyc', '.pyo', '.pyd', '.db', '.sqlite', '.sqlite3', '.sql', '.exe', '.dll', '.so', '.dylib', '.bin', '.dat', '.pkl', '.jpg', '.jpeg', '.png', '.gif', '.pdf', '.DS_Store', '.env'}
 
 def should_ignore(name, is_dir=False):
@@ -73,7 +73,7 @@ def get_tree_structure_string(tree_data):
 
 def format_output_text(tree_structure_str, file_contents):
     """Formats the output text with tree structure and file contents."""
-    output_text = "Folder Tree Structure:\n"
+    output_text = "Folder Structure:\n"
     output_text += tree_structure_str + "\n\n"
     output_text += "Selected File Contents:\n"
     for filepath, content in file_contents.items():
